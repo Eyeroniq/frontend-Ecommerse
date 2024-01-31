@@ -1,0 +1,61 @@
+.container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: white;
+    margin: auto;
+    padding-top: 5%;
+    padding-left: 120px;
+}
+
+.button {
+    color: #fff;
+    font-weight: normal;
+    font-size: 18px; /* Reduced font size */
+    background: #0e0e0e;
+    border-radius: 25px; /* Reduced border-radius */
+    padding: 10px 25px; /* Reduced padding */
+    border: none;
+    transition: .5s ease;
+    box-shadow: 0 15px 60px -5px rgba(0, 0, 0, .5);
+}
+
+.button:hover {
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.button:hover + .drip-1 {
+    height: 30px; /* Reduced height */
+}
+
+.button:hover ~ .drip-2 {
+    height: 50px; /* Reduced height */
+}
+
+.button:hover ~ .drip-3 {
+    height: 20px; /* Reduced height */
+}
+
+.drip-1,
+.drip-2,
+.drip-3 {
+    position: absolute;
+    width: 10px; /* Reduced width */
+    height: 0px; /* Adjusted height */
+    border-radius: 0 0 10px 10px; /* Adjusted border-radius */
+    background: #d00101;
+    transition: height 0.9s ease;
+}
+
+.drip-1 {
+    margin: 0px 50px; /* Adjusted margin */
+}
+
+.drip-2 {
+    margin: 0px 60px; /* Adjusted margin */
+}
+
+.drip-3 {
+    margin: 0px 20px; /* Adjusted margin */
+}
