@@ -7,4 +7,6 @@
     animation: spin 10s linear infinite; /* Adjust the duration (10s) as needed */
   }
 
-  
+  .stop-spin:hover {
+    animation-play-state: paused;
+  }

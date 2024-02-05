@@ -6,7 +6,9 @@ export default {
     './src/**/*.tsx',
   ],
   theme: {
-    extend: {},
+    extend: {
+      scale: ['hover'], // Enable scale variant for hover
+    },
   },
   plugins: [],
 }
