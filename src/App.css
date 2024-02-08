@@ -10,3 +10,12 @@
   .stop-spin:hover {
     animation-play-state: paused;
   }
+
+  @font-face {
+    font-family: 'MyFont';
+    src: local('MyFont'), url('./assets/fonts/font.ttf') format('truetype');
+  }
+
+  .my-text {
+    font-family: 'MyFont', sans-serif;
+  }

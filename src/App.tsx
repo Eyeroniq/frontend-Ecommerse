@@ -1,6 +1,6 @@
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import { Home } from './Pages/Home'
-import { NavBar } from './Pages/Navbar'
+import  NavBar  from './Pages/Navbar'
 import { Option2 } from './Pages/Option2'
 import { Option1 } from './Pages/Option1'
 import { Option4 } from './Pages/Option4'
