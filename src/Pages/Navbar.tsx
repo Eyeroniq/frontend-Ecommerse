@@ -1,11 +1,16 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
 import './../css/Button.css';
-import logo from "./../assets/ring.png"
-import god from "./../assets/Asset 10-8.png"
-import './../App.css'
+import logo from "./../assets/ring.png";
+import god from "./../assets/Asset 10-8.png";
+import './../App.css';
 
-const Modal = ({ isOpen, onClose }) => {
+interface ModalProps {
+    isOpen: boolean;
+    onClose: () => void;
+}
+
+const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
     if (!isOpen) return null;
 
     return (
@@ -69,7 +74,7 @@ const Modal = ({ isOpen, onClose }) => {
     );
 };
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
