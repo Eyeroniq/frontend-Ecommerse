@@ -1,0 +1,26 @@
+{
+  "new": [
+    { "id": 1, "url": "./../src/assets/products/p1.png", "name": "John" },
+    { "id": 2, "url": "./../src/assets/products/p2.png", "name": "Jane" },
+    { "id": 3, "url": "./../src/assets/products/p1.png", "name": "Alice" },
+    { "id": 4, "url": "./../src/assets/products/p2.png", "name": "Alice" },
+    { "id": 5, "url": "./../src/assets/products/p1.png", "name": "Alice" },
+    { "id": 6, "url": "./../src/assets/products/p2.png", "name": "Alice" }
+  ],
+  "dripped": [
+    { "id": 1, "url": "./../src/assets/products/p1.png", "name": "Race" },
+    { "id": 2, "url": "./../src/assets/products/p2.png", "name": "Race" },
+    { "id": 3, "url": "./../src/assets/products/p1.png", "name": "Racee" },
+    { "id": 4, "url": "./../src/assets/products/p2.png", "name": "Racee" },
+    { "id": 5, "url": "./../src/assets/products/p1.png", "name": "Racee" },
+    { "id": 6, "url": "./../src/assets/products/p2.png", "name": "Racee" }
+  ],
+  "all": [
+    { "id": 1, "url": "./../src/assets/products/p1.png", "name": "Jazy" },
+    { "id": 2, "url": "./../src/assets/products/p2.png", "name": "Jazy" },
+    { "id": 3, "url": "./../src/assets/products/p1.png", "name": "Jazye" },
+    { "id": 4, "url": "./../src/assets/products/p2.png", "name": "Jazye" },
+    { "id": 5, "url": "./../src/assets/products/p1.png", "name": "Jazye" },
+    { "id": 6, "url": "./../src/assets/products/p2.png", "name": "Jazye" }
+  ]
+}

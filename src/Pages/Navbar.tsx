@@ -105,7 +105,7 @@ const NavBar: React.FC = () => {
                             <div className="drip-3"></div>
                         </div>
                     </NavLink>
-                    <NavLink className="my-text text-xl" to="/"> Bag </NavLink>
+                    <NavLink className="my-text text-xl text-gray-700" to="/"> Bag </NavLink>
                 </div>
             </nav>
             <div className="absolute top-0 w-full bg-transparent z-10 flex justify-center items-center p-6">
@@ -115,10 +115,9 @@ const NavBar: React.FC = () => {
             </div>
             {isOpen && (
                 <div className="fixed z-10 mt-20 p-3 pt-12">
-                    <a href="/Option1" className="my-text block font-bold text-xl hover:text-gray-400 py-2">Option1</a>
-                    <a href="/Option2" className="my-text block font-bold text-xl hover:text-gray-400 py-2">Option2</a>
-                    <a href="/Option3" className="my-text block font-bold text-xl hover:text-gray-400 py-2">Option3</a>
-                    <a href="/Option4" className="my-text block font-bold text-xl hover:text-gray-400 py-2">Option4</a>
+                    <a href="/Option1" className="my-text text-gray-700  block font-bold text-xl hover:text-gray-400 py-2">New</a>
+                    <a href="/Option2" className="my-text text-gray-700 block font-bold text-xl hover:text-gray-400 py-2">Dripped</a>
+                    <a href="/Option3" className="my-text text-gray-700 block font-bold text-xl hover:text-gray-400 py-2">All</a>
                 </div>
             )}
             <Modal isOpen={isModalOpen} onClose={closeModal} />

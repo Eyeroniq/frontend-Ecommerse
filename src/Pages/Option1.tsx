@@ -1,27 +1,50 @@
-export const Option1 = ()=>{
-    const arrayOfObjects = [
-        { id: 1, url:'./../src/assets/products/p1.png',  name: 'John' },
-        { id: 2, url:'./../src/assets/products/p2.png',  name: 'Jane' },
-        { id: 3, url:'./../src/assets/products/p1.png',  name: 'Alice' },
-        { id: 4, url:'./../src/assets/products/p2.png',  name: 'Alice' },
-        { id: 5, url:'./../src/assets/products/p1.png',  name: 'Alice' },
-        { id: 6, url:'./../src/assets/products/p2.png',  name: 'Alice' },
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import data from '../assets/data.json';
+import backGround from '../assets/background/backGround.jpg';
 
+interface ImageData {
+  id: number;
+  url: string;
+  name: string;
+}
 
-    ];
+const Option1: React.FC = () => {
+  const imageData = data.new as ImageData[];
+  const [hoveredId, setHoveredId] = useState<number | null>(null);
 
-    return(
-        <div className="flex justify-center items-center h-screen">
-       
-        <div className="grid grid-cols-2 gap-4 p-4">
-                {arrayOfObjects.map((obj) => (
-                    <div key={obj.id} className="flex items-center grid grid-cols-1 gap-4">                    
-                    <img src={obj.url} alt={`Image ${obj.id}`} className="w-50 h-50" /> 
-                 <p>Name: {obj.name}</p>
-                    </div>
-                ))}
+  return (
+    <div>
+      <div className="justify-center items-center">
+        <img src={backGround} alt="background image"  className='w-full'/>
+      </div>
+      <div className="justify-center items-center mt-8 pt-12">
+        <div className="grid grid-cols-2">
+          {imageData.map((item) => (
+            <div
+              key={item.id}
+              className="flex flex-col items-center justify-center"
+              onMouseEnter={() => setHoveredId(item.id)}
+              onMouseLeave={() => setHoveredId(null)}
+            >
+              <Link to={`/Option1/${item.id}`}>
+                <img
+                  src={item.url}
+                  alt={`Image ${item.id}`}
+                  style={{ width: '20rem', height: '20rem' }}
+                />
+              </Link>
+              {hoveredId === item.id && (
+                <p className="text-center my-text mt-2  py-1 px-2 transition-opacity duration-300 ease-in-out pb-8">
+                  Name: {item.name}
+                </p>
+              )}
             </div>
+          ))}
+        </div>
+      </div>
     </div>
-    
-    )
-    }
+  );
+};
+
+export default Option1;
