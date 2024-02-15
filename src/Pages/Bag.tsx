@@ -29,7 +29,7 @@ const Bag: React.FC<BagProps> = ({ bagItems = [] }) => {
 
     <div className="flex flex-col">
     
-      <div className="flex">
+      <div className="flex item-center justify-center mt-40">
         <h1>Bag</h1>
         {bagItems.length === 0 ? (
           <p>Your bag is empty.</p>
