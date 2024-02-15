@@ -1,26 +1,22 @@
-{
-  "new": [
-    { "id": 1, "url": "./../src/assets/products/p1.png", "name": "John" },
-    { "id": 2, "url": "./../src/assets/products/p2.png", "name": "Jane" },
-    { "id": 3, "url": "./../src/assets/products/p1.png", "name": "Alice" },
-    { "id": 4, "url": "./../src/assets/products/p2.png", "name": "Alice" },
-    { "id": 5, "url": "./../src/assets/products/p1.png", "name": "Alice" },
-    { "id": 6, "url": "./../src/assets/products/p2.png", "name": "Alice" }
-  ],
-  "dripped": [
-    { "id": 1, "url": "./../src/assets/products/p1.png", "name": "Race" },
-    { "id": 2, "url": "./../src/assets/products/p2.png", "name": "Race" },
-    { "id": 3, "url": "./../src/assets/products/p1.png", "name": "Racee" },
-    { "id": 4, "url": "./../src/assets/products/p2.png", "name": "Racee" },
-    { "id": 5, "url": "./../src/assets/products/p1.png", "name": "Racee" },
-    { "id": 6, "url": "./../src/assets/products/p2.png", "name": "Racee" }
-  ],
-  "all": [
-    { "id": 1, "url": "./../src/assets/products/p1.png", "name": "Jazy" },
-    { "id": 2, "url": "./../src/assets/products/p2.png", "name": "Jazy" },
-    { "id": 3, "url": "./../src/assets/products/p1.png", "name": "Jazye" },
-    { "id": 4, "url": "./../src/assets/products/p2.png", "name": "Jazye" },
-    { "id": 5, "url": "./../src/assets/products/p1.png", "name": "Jazye" },
-    { "id": 6, "url": "./../src/assets/products/p2.png", "name": "Jazye" }
-  ]
-}
+[
+  { "tagName": "new", "id": 1, "url": "./../src/assets/products/p1.png", "name": "John" },
+  { "tagName": "new", "id": 2, "url": "./../src/assets/products/p2.png", "name": "Jane" },
+  { "tagName": "new", "id": 3, "url": "./../src/assets/products/p1.png", "name": "Alice" },
+  { "tagName": "new", "id": 4, "url": "./../src/assets/products/p2.png", "name": "Alice" },
+  { "tagName": "new", "id": 5, "url": "./../src/assets/products/p1.png", "name": "Alice" },
+  { "tagName": "new", "id": 6, "url": "./../src/assets/products/p2.png", "name": "Alice" },
+
+  { "tagName": "dripped", "id": 7, "url": "./../src/assets/products/p1.png", "name": "Race" },
+  { "tagName": "dripped", "id": 8, "url": "./../src/assets/products/p2.png", "name": "Race" },
+  { "tagName": "dripped", "id": 9, "url": "./../src/assets/products/p1.png", "name": "Racee" },
+  { "tagName": "dripped", "id": 10, "url": "./../src/assets/products/p2.png", "name": "Racee" },
+  { "tagName": "dripped", "id": 11, "url": "./../src/assets/products/p1.png", "name": "Racee" },
+  { "tagName": "dripped", "id": 12, "url": "./../src/assets/products/p2.png", "name": "Racee" },
+
+  { "id": 13, "url": "./../src/assets/products/p1.png", "name": "Jazy" },
+  { "id": 14, "url": "./../src/assets/products/p2.png", "name": "Jazy" },
+  { "id": 15, "url": "./../src/assets/products/p1.png", "name": "Jazye" },
+  { "id": 16, "url": "./../src/assets/products/p2.png", "name": "Jazye" },
+  { "id": 17, "url": "./../src/assets/products/p1.png", "name": "Jazye" },
+  { "id": 18, "url": "./../src/assets/products/p2.png", "name": "Jazye" }
+]

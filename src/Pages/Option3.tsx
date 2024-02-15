@@ -4,13 +4,15 @@ import data from '../assets/data.json';
 import backGround from '../assets/background/backGround.jpg';
 
 interface ImageData {
+  tagName?: string; 
   id: number;
   url: string;
   name: string;
 }
 
+
 const Option3: React.FC = () => {
-  const imageData = data.all as ImageData[];
+  const imageData = data as ImageData[]; // Remove filtering condition
   const [hoveredId, setHoveredId] = useState<number | null>(null);
 
   return (
@@ -18,7 +20,7 @@ const Option3: React.FC = () => {
       <div className="justify-center items-center">
         <img src={backGround} alt="background image" className='w-full' />
       </div>
-      <div className="justify-center items-center  mt-8 pt-12">
+      <div className="justify-center items-center mt-8 pt-12">
         <div className="grid grid-cols-2">
           {imageData.map((item) => (
             <div
@@ -27,7 +29,7 @@ const Option3: React.FC = () => {
               onMouseEnter={() => setHoveredId(item.id)}
               onMouseLeave={() => setHoveredId(null)}
             >
-              <Link to={`/Option3/${item.id}`}> {/* Update route to Option3 */}
+              <Link to={`/Option3/${item.id}`}>
                 <img
                   src={item.url}
                   alt={`Image ${item.id}`}
@@ -35,7 +37,7 @@ const Option3: React.FC = () => {
                 />
               </Link>
               {hoveredId === item.id && (
-                <p className="text-center my-text mt-2  py-1 px-2 transition-opacity duration-300 ease-in-out pb-8">
+                <p className="text-center my-text mt-2 py-1 px-2 transition-opacity duration-300 ease-in-out pb-8">
                   Name: {item.name}
                 </p>
               )}

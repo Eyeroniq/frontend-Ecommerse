@@ -1,12 +1,13 @@
 
-interface Option {
+interface ImageData {
+  tagName:string;
     id: number;
-    image: string;
+    url: string;
     name: string; 
     price: number;
     color: string;
     details: string;
   }
   
-  export default Option;
+  export default ImageData;
   

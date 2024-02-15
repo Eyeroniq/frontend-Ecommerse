@@ -1,34 +1,35 @@
-// Option2.tsx
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import data from '../assets/data.json';
+import data from '../assets/data.json'; // Assuming data is imported correctly
 import backGround from '../assets/background/backGround.jpg';
 
 interface ImageData {
+  tagName?: string; 
   id: number;
   url: string;
   name: string;
 }
 
-const Option2: React.FC = () => {
-  const imageData = data.dripped as ImageData[];
+
+const Option1: React.FC = () => {
+  const newData = data.filter((item: any) => item.tagName === "dripped") as ImageData[];
   const [hoveredId, setHoveredId] = useState<number | null>(null);
 
   return (
     <div>
       <div className="justify-center items-center">
-        <img src={backGround} alt="background image" className='w-full' />
+        <img src={backGround} alt="background image"  className='w-full'/>
       </div>
-      <div className="justify-center items-center  mt-8 pt-12">
-        <div className="grid grid-cols-2 ">
-          {imageData.map((item) => (
+      <div className="justify-center items-center mt-8 pt-12">
+        <div className="grid grid-cols-2">
+          {newData.map((item) => (
             <div
               key={item.id}
               className="flex flex-col items-center justify-center"
               onMouseEnter={() => setHoveredId(item.id)}
               onMouseLeave={() => setHoveredId(null)}
             >
-              <Link to={`/Option2/${item.id}`}>
+              <Link to={`/Option1/${item.id}`}>
                 <img
                   src={item.url}
                   alt={`Image ${item.id}`}
@@ -48,4 +49,4 @@ const Option2: React.FC = () => {
   );
 };
 
-export default Option2;
+export default Option1;

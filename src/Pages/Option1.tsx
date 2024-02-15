@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import data from '../assets/data.json';
+import data from '../assets/data.json'; // Assuming data is imported correctly
 import backGround from '../assets/background/backGround.jpg';
 
 interface ImageData {
+  tagName?: string; 
   id: number;
   url: string;
   name: string;
 }
 
+
 const Option1: React.FC = () => {
-  const imageData = data.new as ImageData[];
+  const newData = data.filter((item: any) => item.tagName === "new") as ImageData[];
   const [hoveredId, setHoveredId] = useState<number | null>(null);
 
   return (
@@ -20,7 +22,7 @@ const Option1: React.FC = () => {
       </div>
       <div className="justify-center items-center mt-8 pt-12">
         <div className="grid grid-cols-2">
-          {imageData.map((item) => (
+          {newData.map((item) => (
             <div
               key={item.id}
               className="flex flex-col items-center justify-center"
