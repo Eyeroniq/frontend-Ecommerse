@@ -4,7 +4,7 @@ A multi-page storefront UI built with React 18, TypeScript, React Router and Tai
 
 **Live demo:** https://frontend-ecommerse.vercel.app
 
-> An early project (2024) from when I was learning React and TypeScript. My more recent work is pinned on my [GitHub profile](https://github.com/Eyeroniq).
+> An early (2024) team project built with [Tejas Vaij](https://github.com/TechManTejas) while learning React and TypeScript. My more recent work is pinned on my [GitHub profile](https://github.com/Eyeroniq).
 
 ## Features
 
@@ -43,7 +43,3 @@ src/
 └── css/               # shared button styles
 public/products/       # product images served at /products/*
 ```
-
-## License
-
-[MIT](LICENSE)
